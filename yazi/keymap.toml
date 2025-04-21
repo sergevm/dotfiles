@@ -1,0 +1,5 @@
+[keymap]
+resize_pane_increase_width = "Ctrl+h"
+resize_pane_decrease_width = "Ctrl+l"
+resize_pane_increase_height = "Ctrl+j"
+resize_pane_decrease_height = "Ctrl+k"
