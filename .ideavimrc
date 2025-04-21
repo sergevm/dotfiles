@@ -14,6 +14,8 @@ set ignorecase smartcase
 set incsearch
 " Smart case settings
 set smartcase
+set number 
+set relativenumber
 " Clipboard stuff
 set clipboard^=unnamedplus,unnamed
 
@@ -21,8 +23,12 @@ set clipboard^=unnamedplus,unnamed
 map Q gq
 inoremap jk <Esc>
 set timeoutlen=500
-map gn <Action>(GotoNextError)
-map gp <Action>(GotoPreviousError)
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+nmap gn <Action>(GotoNextError)
+nmap gp <Action>(GotoPreviousError)
+nmap gb <Action>(Back)
+nmap gh <Action>(ShowHoverInfo)
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
