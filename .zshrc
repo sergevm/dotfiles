@@ -11,6 +11,7 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 alias ic='~/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias c-csp='open -n "/Applications/Google Chrome.app" --args --user-data-dir="$HOME/chrome-dev-data" --disable-web-security'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -122,7 +123,7 @@ source <(ng completion script)
 export AzureCLIPath="/opt/homebrew/bin"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/$USER/.rd/bin:$PATH"
+export PATH="/Users/serge/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 export EDITOR=nvim

@@ -216,13 +216,13 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'org.mozilla.firefox'
-    run = ['move-node-to-workspace B']  # The callback itself
+    run = ['move-node-to-workspace F']  # The callback itself
 [[on-window-detected]]
     if.app-id = 'com.google.Chrome'
-    run = ['move-node-to-workspace B']  # The callback itself
+    run = ['move-node-to-workspace C']  # The callback itself
 [[on-window-detected]]
     if.app-id = 'com.microsoft.edgemac'
-    run = ['move-node-to-workspace B']  # The callback itself
+    run = ['move-node-to-workspace E']  # The callback itself
 [[on-window-detected]]
     if.app-id = 'com.jetbrains.rider'
     run = ['move-node-to-workspace R']  # The callback itself
