@@ -1,0 +1,10 @@
+[user]
+	name = Serge Van Meerbeeck
+	email = serge.vanmeerbeeck@gmail.com
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+  useHttpPath = true
+[includeIf "gitdir:~/code/kluwer/"]
+    path = ~/code/kluwer/.gitconfig
