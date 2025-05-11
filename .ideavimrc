@@ -72,7 +72,7 @@ map <leader>br <Action>(RebuildSolution)
 " Highlight copied text
 set surround
 set highlightedyank
-set which-jey
+set which-key
 set notimeout
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
