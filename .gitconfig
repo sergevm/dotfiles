@@ -2,9 +2,16 @@
 	name = Serge Van Meerbeeck
 	email = serge.vanmeerbeeck@gmail.com
 [credential]
-	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
   useHttpPath = true
 [includeIf "gitdir:~/code/kluwer/"]
     path = ~/code/kluwer/.gitconfig
+[diff]
+	tool = nvimdiff
+[merge]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+[mergetool "nvimdiff"]
+	cmd = nvim -d \"$BASE\" \"$LOCAL\" \"$REMOTE\" -c \"wincmd J\"

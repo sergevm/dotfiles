@@ -14,9 +14,7 @@ alias ic='~/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias c-csp='open -n "/Applications/Google Chrome.app" --args --user-data-dir="$HOME/chrome-dev-data" --disable-web-security'
 # Kluwer CoreAccounting stuff
 alias oa='cd ~/code/kluwer/CoreAccounting'
-alias oa-shell='cd ~/code/kluwer/CoreAccounting/wktaae-shell-components/src/wktaae-shellcomponents'
-alias b-oa-shell='cd ~/code/kluwer/CoreAccounting/wktaae-shell-components/src/wktaae-shellcomponents && npm run build:all'
-alias oa-header='cd ~/code/kluwer/CoreAccounting/wktaae-shared-components/components/wktaae-header-component/wktaae-header-v2/src'
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

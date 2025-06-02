@@ -211,29 +211,37 @@ automatically-unhide-macos-hidden-apps = false
     shift-down = ['volume set 0', 'mode main']
 
 [[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
-    run = ['move-node-to-workspace T']  # The callback itself
-
-[[on-window-detected]]
-    if.app-id = 'org.mozilla.firefox'
-    run = ['move-node-to-workspace F']  # The callback itself
-[[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    run = ['move-node-to-workspace C']  # The callback itself
-[[on-window-detected]]
-    if.app-id = 'com.microsoft.edgemac'
-    run = ['move-node-to-workspace E']  # The callback itself
-[[on-window-detected]]
-    if.app-id = 'com.jetbrains.rider'
-    run = ['move-node-to-workspace R']  # The callback itself
-[[on-window-detected]]
     if.app-id = 'com.microsoft.Outlook'
     run = ['move-node-to-workspace 1']  # The callback itself
 [[on-window-detected]]
     if.app-id = 'com.microsoft.teams2'
     run = ['move-node-to-workspace 2']  # The callback itself
 [[on-window-detected]]
+    if.app-id = 'org.mozilla.firefox'
+    run = ['move-node-to-workspace B']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.google.Chrome'
+    run = ['move-node-to-workspace C']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.docker.docker'
+    run = ['move-node-to-workspace D']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.microsoft.edgemac'
+    run = ['move-node-to-workspace E']  # The callback itself
+[[on-window-detected]]
     if.app-id = 'com.postmanlabs.mac'
     run = ['move-node-to-workspace P']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.apple.Notes'
+    run = ['move-node-to-workspace N']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.jetbrains.rider'
+    run = ['move-node-to-workspace R']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = ['move-node-to-workspace S']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = ['move-node-to-workspace T']  # The callback itself
 
 
