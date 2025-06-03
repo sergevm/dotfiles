@@ -2,11 +2,12 @@
 	name = Serge Van Meerbeeck
 	email = serge.vanmeerbeeck@gmail.com
 [credential]
-	helper = osxkeychain
-[credential "https://dev.azure.com"]
+	helper = manager-core
   useHttpPath = true
-[includeIf "gitdir:~/code/kluwer/"]
-    path = ~/code/kluwer/.gitconfig
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[includeIf "gitdir:/Users/serge/code/kluwer/**"]
+    path = /Users/serge/code/kluwer/.gitconfig
 [diff]
 	tool = nvimdiff
 [merge]
@@ -15,3 +16,5 @@
 	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
 [mergetool "nvimdiff"]
 	cmd = nvim -d \"$BASE\" \"$LOCAL\" \"$REMOTE\" -c \"wincmd J\"
+[credential "https://dev.azure.com"]
+	useHttpPath = true
