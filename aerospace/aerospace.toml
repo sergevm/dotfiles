@@ -232,8 +232,11 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.apple.iCal'
     run = ['move-node-to-workspace C']  # The callback itself
 [[on-window-detected]]
-    if.app-id = 'com.docker.docker'
-    run = ['move-node-to-workspace D']  # The callback itself
+    if.app-id = 'com.electron.dockerdesktop'
+    run = ['layout floating', 'move-node-to-workspace D']  # The callback itself
+[[on-window-detected]]
+    if.app-id = 'com.mongodb.compass'
+    run = ['layout floating', 'move-node-to-workspace D']  # The callback itself
 [[on-window-detected]]
     if.app-id = 'com.microsoft.edgemac'
     run = ['move-node-to-workspace E']  # The callback itself
