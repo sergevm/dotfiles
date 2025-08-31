@@ -47,3 +47,9 @@ brew install tmux
 if [ ! -d "$XDG_CONFIG_HOME/tmux/plugins/catppuccin/tmux" ] ; then
   git clone -b v2.1.3 https://github.com/catppuccin/tmux.git $XDG_CONFIG_HOME/tmux/plugins/catppuccin/tmux
 fi
+if [ ! -d "~/.tmux/plugins/tpm" ] ; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# Install tmux plugins
+~/.tmux/plugins/tpm/bin/install_plugins
+tmux source-file ~/.tmux.conf
+fi
