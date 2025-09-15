@@ -53,3 +53,6 @@ if [ ! -d "~/.tmux/plugins/tpm" ] ; then
 ~/.tmux/plugins/tpm/bin/install_plugins
 tmux source-file ~/.tmux.conf
 fi
+
+echo "Installing stow..."
+brew install stow
