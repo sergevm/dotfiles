@@ -1,4 +1,5 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
+BREW_PREFIX=$(brew --prefix)
+eval "$($BREW_PREFIX/bin/brew shellenv)"
 # Added by Toolbox App
 export PATH="$PATH:/Users/serge/Library/Application Support/JetBrains/Toolbox/scripts"
 # Add .NET Core SDK tools

@@ -2,7 +2,7 @@
 
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
-echo "Installing Oh My Zsh and Powerlevel10k theme..."
+echo "Installing Oh My Zsh with plugins ..."
 if [ ! -d "$HOME/.oh-my-zsh" ] ; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
@@ -16,7 +16,18 @@ fi
 if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/catppuchin/zsh-syntax-highlighting" ] ; then
   git clone --depth=1 https://github.com/catppuccin/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/catppuchin/zsh-syntax-highlighting"
 else
+  echo "zsh-syntax-highlighting catppuccin theme is already installed"
+fi
+if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ] ; then
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+else
   echo "zsh-syntax-highlighting is already installed"
+fi
+
+if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ] ; then
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+else
+  echo "zsh-autosuggestions is already installed"
 fi
 
 echo "Installling azure-cli..."
