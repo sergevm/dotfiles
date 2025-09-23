@@ -33,6 +33,9 @@ else
   echo "zsh-autosuggestions is already installed"
 fi
 
+echo "Installing catppuccin theme for zsh"
+./install_oh_my_zsh_catppuccin_theme.sh
+
 echo "Installling azure-cli..."
 brew install azure-cli
 
