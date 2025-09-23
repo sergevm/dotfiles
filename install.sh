@@ -2,6 +2,9 @@
 
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
+echo "Installing homebrew..."
+./install_brew.sh
+
 echo "Installing Oh My Zsh with plugins ..."
 if [ ! -d "$HOME/.oh-my-zsh" ] ; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
