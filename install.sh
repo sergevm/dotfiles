@@ -67,3 +67,6 @@ fi
 
 echo "Installing stow..."
 brew install stow
+
+echo "Installing git credential manager..."
+brew install --cask git-credential-manager

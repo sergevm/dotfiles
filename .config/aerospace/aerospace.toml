@@ -262,6 +262,9 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.mitchellh.ghostty'
     run = ['move-node-to-workspace T']  # The callback itself
 [[on-window-detected]]
+    if.app-id = 'com.googlecode.iterm2'
+    run = ['move-node-to-workspace T']
+[[on-window-detected]]
     if.app-id = 'com.jetbrains.datagrip'
     run = ['move-node-to-workspace D']  # The callback itself
 [[on-window-detected]]

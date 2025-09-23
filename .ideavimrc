@@ -77,6 +77,10 @@ set notimeout
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-commentary'
 
+" Need to test if this actually works
+set camelcasemotion
+let g:camelcasemotion_key = '<leader>'
+
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 map <leader>d <Action>(Debug)
 map <leader>= <Action>(ReformatCode)
