@@ -2,12 +2,12 @@
 	name = Serge Van Meerbeeck
 	email = serge.vanmeerbeeck@gmail.com
 [credential]
-	helper = manager-core
   useHttpPath = true
-	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
-[includeIf "gitdir:/Users/serge/code/kluwer/**"]
-    path = /Users/serge/code/kluwer/.gitconfig
+[includeIf "gitdir:/Users/serge/code/work/**"]
+    path = /Users/serge/code/work/.gitconfig
+[includeIf "gitdir:/Users/serge/code/personal/**"]
+    path = /Users/serge/code/personal/.gitconfig
 [diff]
 	tool = nvimdiff
 [merge]
