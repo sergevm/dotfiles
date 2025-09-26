@@ -66,8 +66,8 @@ imap jk <Esc>
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
 
-map <leader>bb <Action>(BuildSolution)
-map <leader>br <Action>(RebuildSolution)
+map <leader>bb <Action>(BuildSolutionAction)
+map <leader>br <Action>(RebuildSolutionAction)
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 set surround
