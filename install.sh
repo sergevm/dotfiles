@@ -76,3 +76,9 @@ brew install stow
 
 echo "Installing git credential manager..."
 brew install --cask git-credential-manager
+
+echo "Installing treesitter cli"
+brew install tree-sitter-cli
+
+echo "Installing swift-format"
+brew install swift-format
